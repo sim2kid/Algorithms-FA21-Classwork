@@ -7,6 +7,51 @@ namespace Algorithms_FA21_Classwork
 {
     static class BigOExample2_9
     {
+        /// <summary>
+        /// This function will always run for the same amount of time no matter what value is put in for <paramref name="n"/>. 
+        /// This gives it a BigO of O(1)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        static int ConstantO(int n) 
+        {
+            return n + n;
+        }
+
+        /// <summary>
+        /// This function scales linearly. The number of items for <paramref name="n"/> will directly corrlate to the time it takes to compute this function.
+        /// This gives it a BigO of O(<paramref name="n"/>)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        static int LinearO(int[] n) 
+        {
+            int toReturn = 0;
+            foreach (int num in n) 
+            {
+                toReturn += num;
+            }
+            return toReturn;
+        }
+
+        /// <summary>
+        /// This function scales Quadratically. The number of items for <paramref name="n"/> will be squared in corrlation to the time it takes to compute this function.
+        /// This is essentially <see cref="LinearO(List{int})"/> nested inside of a <see cref="LinearO(List{int})"/>.
+        /// This gives it a BigO of O(<paramref name="n"/>²)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        static int QuadraticO(int[] n) 
+        {
+            int toReturn = 0;
+            foreach (int num in n) 
+            {
+                toReturn += num * LinearO(n);
+            }
+            return toReturn;
+        }
+
+        // You can skip this function
         public static string About()
         {
             int[] list = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -61,49 +106,6 @@ namespace Algorithms_FA21_Classwork
                 $"}}\n" +
                 $"And out output is `{quadO}` and it took {quadTime} milliseconds.\n" +
                 $"Note: This function may be faster due to CPU acceleration and compiling magic since LinearO(n) has been calculated before.";
-        }
-        /// <summary>
-        /// This function will always run for the same amount of time no matter what value is put in for <paramref name="n"/>. 
-        /// This gives it a BigO of O(1)
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        static int ConstantO(int n) 
-        {
-            return n + n;
-        }
-
-        /// <summary>
-        /// This function scales linearly. The number of items for <paramref name="n"/> will directly corrlate to the time it takes to compute this function.
-        /// This gives it a BigO of O(<paramref name="n"/>)
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        static int LinearO(int[] n) 
-        {
-            int toReturn = 0;
-            foreach (int num in n) 
-            {
-                toReturn += num;
-            }
-            return toReturn;
-        }
-
-        /// <summary>
-        /// This function scales Quadratically. The number of items for <paramref name="n"/> will be squared in corrlation to the time it takes to compute this function.
-        /// This is essentially <see cref="LinearO(List{int})"/> nested inside of a <see cref="LinearO(List{int})"/>.
-        /// This gives it a BigO of O(<paramref name="n"/>²)
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        static int QuadraticO(int[] n) 
-        {
-            int toReturn = 0;
-            foreach (int num in n) 
-            {
-                toReturn += num * LinearO(n);
-            }
-            return toReturn;
         }
     }
 }
