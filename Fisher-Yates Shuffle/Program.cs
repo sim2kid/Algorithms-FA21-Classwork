@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Fisher_Yates_Shuffle
 {
@@ -6,7 +7,7 @@ namespace Fisher_Yates_Shuffle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
