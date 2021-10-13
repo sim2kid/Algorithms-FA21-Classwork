@@ -9,8 +9,10 @@ namespace Fisher_Yates_Shuffle
         {
             List<string> Words = LoadCVS("data.csv");
             Console.WriteLine($"Before Shuffle:\n{WriteList(Words)}");
-            Words = ArrayToList<string>(FisherYates.AltFisherYatesShuffle(Words.ToArray()));
+            Words = ArrayToList<string>(FisherYates.FisherYatesShuffle(Words.ToArray()));
             Console.WriteLine($"\nAfter Shuffle:\n{WriteList(Words)}");
+            Words = ArrayToList<string>(FisherYates.AltFisherYatesShuffle(LoadCVS("data.csv").ToArray()));
+            Console.WriteLine($"\nAlt Shuffle:\n{WriteList(Words)}");
         }
 
         private static List<T> ArrayToList<T>(object[] array) 
