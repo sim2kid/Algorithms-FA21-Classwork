@@ -16,6 +16,7 @@ Here's the output and the explanation for that script.
 <details>
   <summary>Console Output</summary>
   <br>
+  
 ```
 Strating off, we have Arrays and Maps. An array is just a list of like values. They're usually indexed by their position in an array.
 Here's an example array with 5 values in it.
@@ -53,4 +54,5 @@ Let's make our Queue with the same array as the stack.
 Our current begining of the Queue is "1" which is the first number in our queue.
 If we dequeue 22 objects, then our next position in the queue is "23"
 ```
+  
 </details>
