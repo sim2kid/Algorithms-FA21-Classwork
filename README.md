@@ -5,15 +5,15 @@ For each week's worth of class work, I will update what we did here in this Read
 We learned about BigO. No projects are avlaiable from Week 1.
 
 # Week 2
-2.9: Assignment I: Code Examples and Portfolio Start
+2.9: Assignment I: Code Examples and Portfolio Start<br>
 We demonstrated our understanding of Big O through some demo code. See the Week 2 folder for that specific class.
 
 # Week 5
-5.9: Assignment II: Fisher-Yates Shuffle
+5.9: Assignment II: Fisher-Yates Shuffle<br>
 We learned how to do a Fisher-Yates Shuffle. To put simply, you just start from one end of an array and pick a random object from the other end (including where you're at) and swap the objects, then you take a step. This will result in a well shuffled array! All of the code is under the Fisher-Yates Shuffle project and is on the Week 5 Branch. You can see all of the work on github as well [by clicking this link](https://github.com/sim2kid/Algorithms-FA21-Classwork/blob/main/Fisher-Yates%20Shuffle/FisherYates.cs)
 
 # Week 8
-8.7: Assignment III: Data Structures
+8.7: Assignment III: Data Structures<br>
 For week 8, we went over data types and when to use them. These are avalible to look at in the "Data Structures" project in the repository.
 Here's the output and the explanation for that script.
 <details>
