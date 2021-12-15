@@ -74,4 +74,4 @@ The Second Project
 
 Throughout the last few weeks, we worked on individual projects to help strengthen parts of our skillsets.
 
-In this project, I decided to tackle a framework for setting a Unity Game window as your desktop background on Windows 8-11. I've done this successfully and all of the code is up on it's own resposioty [located here](https://github.com/sim2kid/DesktopAquarium)
+In this project, I decided to tackle a framework for setting a Unity Game window as your desktop background on Windows 8-11. I've done this successfully and all of the code is up on it's own resposioty called [Desktop Aquarium](https://github.com/sim2kid/DesktopAquarium)
