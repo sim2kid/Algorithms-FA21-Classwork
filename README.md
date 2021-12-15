@@ -1,6 +1,9 @@
 # Algorithms FA21 Classwork
 For each week's worth of class work, I will update what we did here in this ReadMe and the associated C# files will be under that week's folder. I will have each week under it's own project as well in Visual Studio going forward.
 
+## Notable Links
+[Portfolio](https://portfolio.simmgames.com) | [Desktop Aquarium](https://github.com/sim2kid/DesktopAquarium) | [Dialogue System](https://github.com/SimmGames/com.simmgames.dialoguesystem)
+
 # Week 1
 We learned about BigO. No projects are avlaiable from Week 1.
 
@@ -59,3 +62,16 @@ If we dequeue 22 objects, then our next position in the queue is "23"
 ```
   
 </details>
+# Week 1-8
+The First Project
+
+In the first few weeks, we had started some individual projects to help strengthen out portfolios.
+
+For this project, I worked on my [Dialogue System for Unity](https://github.com/SimmGames/com.simmgames.dialoguesystem). I spent time improvoing and refactoring it to be a much more dynamic system than what was avalible with my first itteration of the project.
+
+# Week 9-14
+The Second Project
+
+Throughout the last few weeks, we worked on individual projects to help strengthen parts of our skillsets.
+
+In this project, I decided to tackle a framework for setting a Unity Game window as your desktop background on Windows 8-11. I've done this successfully and all of the code is up on it's own resposioty [located here](https://github.com/sim2kid/DesktopAquarium)
